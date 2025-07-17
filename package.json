@@ -1,6 +1,6 @@
 {
   "name": "@iwpnd/semantic-release-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "semantic-release-config",
   "main": ".releaserc.json",
   "files": [
@@ -28,7 +28,8 @@
     "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
     "u": "yarn upgrade-interactive",
     "lint": "yarn ajv validate -s semantic-release.schema.json -d .releaserc.json --strict=false",
-    "test": "yarn lint"
+    "test": "yarn lint",
+    "prepare": "husky"
   },
   "packageManager": "yarn@4.8.1",
   "devDependencies": {

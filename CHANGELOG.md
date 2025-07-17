@@ -1,3 +1,7 @@
+## <small>1.0.4 (2025-07-17)</small>
+
+* fix: 🐛 postinstall script ([e4bd6fb](https://github.com/iwpnd/semantic-release-config/commit/e4bd6fb))
+
 ## <small>1.0.3 (2025-07-17)</small>
 
 * fix: 🐛 remove test asset ([2e447bc](https://github.com/iwpnd/semantic-release-config/commit/2e447bc))

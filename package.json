@@ -29,7 +29,9 @@
     "postpublish": "pinst --enable",
     "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
     "u": "yarn upgrade-interactive",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "yarn ajv validate -s semantic-release.schema.json -d .releaserc.json --strict=false",
+    "test": "yarn lint"
   },
   "packageManager": "yarn@4.8.1",
   "devDependencies": {
@@ -46,6 +48,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "11.0.3",
     "@semantic-release/release-notes-generator": "14.0.3",
+    "ajv-cli": "5.0.0",
     "semantic-release": "24.2.7"
   }
 }

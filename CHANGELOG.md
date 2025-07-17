@@ -1,3 +1,7 @@
+## <small>1.0.2 (2025-07-17)</small>
+
+* fix: 🐛 update config to include optional assets ([2bd770a](https://github.com/iwpnd/semantic-release-config/commit/2bd770a))
+
 ## <small>1.0.1 (2025-07-17)</small>
 
 * fix: 🐛 add npm plugin to update package.json version ([ef13f08](https://github.com/iwpnd/semantic-release-config/commit/ef13f08))

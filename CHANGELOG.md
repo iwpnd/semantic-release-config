@@ -1,3 +1,7 @@
+## <small>1.0.3 (2025-07-17)</small>
+
+* fix: 🐛 remove test asset ([2e447bc](https://github.com/iwpnd/semantic-release-config/commit/2e447bc))
+
 ## <small>1.0.2 (2025-07-17)</small>
 
 * fix: 🐛 update config to include optional assets ([2bd770a](https://github.com/iwpnd/semantic-release-config/commit/2bd770a))

@@ -1,3 +1,8 @@
+## <small>1.0.1 (2025-07-17)</small>
+
+* fix: 🐛 add npm plugin to update package.json version ([ef13f08](https://github.com/iwpnd/semantic-release-config/commit/ef13f08))
+* docs: 📚️ update readme [skip ci] ([2f5827b](https://github.com/iwpnd/semantic-release-config/commit/2f5827b))
+
 ## 1.0.0 (2025-07-17)
 
 * feat: ✨ enforce json schema on release config ([8bcbce8](https://github.com/iwpnd/semantic-release-config/commit/8bcbce8))

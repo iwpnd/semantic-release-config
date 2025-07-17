@@ -1,7 +1,7 @@
 {
   "name": "@iwpnd/semantic-release-config",
   "version": "1.0.3",
-  "description": "rest-client",
+  "description": "semantic-release-config",
   "main": ".releaserc.json",
   "files": [
     ".releaserc.json"
@@ -22,12 +22,11 @@
     "node": ">=20.x"
   },
   "scripts": {
-    "postinstall": "yarn husky init",
+    "postinstall": "[ -d .git ] && yarn husky init || echo 'Skipping husky install (not in Git repo)'",
     "prepublishOnly": "pinst --disable && yarn run build",
     "postpublish": "pinst --enable",
     "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
     "u": "yarn upgrade-interactive",
-    "prepare": "husky",
     "lint": "yarn ajv validate -s semantic-release.schema.json -d .releaserc.json --strict=false",
     "test": "yarn lint"
   },

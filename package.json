@@ -22,14 +22,12 @@
     "node": ">=20.x"
   },
   "scripts": {
-    "postinstall": "[ -d .git ] && yarn husky init || echo 'Skipping husky install (not in Git repo)'",
     "prepublishOnly": "pinst --disable && yarn run build",
     "postpublish": "pinst --enable",
     "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
     "u": "yarn upgrade-interactive",
     "lint": "yarn ajv validate -s semantic-release.schema.json -d .releaserc.json --strict=false",
-    "test": "yarn lint",
-    "prepare": "husky"
+    "test": "yarn lint"
   },
   "packageManager": "yarn@4.8.1",
   "devDependencies": {

@@ -1,3 +1,7 @@
+## <small>1.0.5 (2025-07-17)</small>
+
+* fix: 🐛 drop postinstall and prepare ([16140e6](https://github.com/iwpnd/semantic-release-config/commit/16140e6))
+
 ## <small>1.0.4 (2025-07-17)</small>
 
 * fix: 🐛 postinstall script ([e4bd6fb](https://github.com/iwpnd/semantic-release-config/commit/e4bd6fb))

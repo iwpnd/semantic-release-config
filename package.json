@@ -1,0 +1,43 @@
+{
+  "name": "@iwpnd/semantic-release-config",
+  "version": "0.0.0",
+  "description": "rest-client",
+  "main": ".releaserc.json",
+  "files": [
+    ".releaserc.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwpnd/semantic-release-config.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "B. Ramser <iwpnd@posteo.de>",
+  "contributors": [],
+  "license": "MIT",
+  "keywords": [
+    "shareable release config",
+    "semantic release"
+  ],
+  "engines": {
+    "node": ">=20.x"
+  },
+  "scripts": {
+    "postinstall": "yarn husky init",
+    "prepublishOnly": "pinst --disable && yarn run build",
+    "postpublish": "pinst --enable",
+    "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
+    "u": "yarn upgrade-interactive",
+    "prepare": "husky"
+  },
+  "packageManager": "yarn@4.8.1",
+  "devDependencies": {
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "devmoji": "2.3.0",
+    "husky": "9.1.7",
+    "pinst": "3.0.0",
+    "rimraf": "6.0.1"
+  }
+}
